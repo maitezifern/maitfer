@@ -22,6 +22,19 @@ background-color:#04146c;
         width:25%;
     }
 
+    .escola-titulo{
+        padding: 24px 0;text-align: center;padding: 50px 0;
+    }
+.escola {
+    background-image: linear-gradient(#04146C,#4EBFE9);
+    color:white;
+    display:flex;
+    justify-content: center; 
+    align-items:center;
+}
+   .escola-conteudo{
+    width:35%;
+   }
 
 
 
