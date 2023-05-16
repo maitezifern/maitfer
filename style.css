@@ -1,54 +1,8 @@
-*{
-    margin: 0 16px;
-    padding: 24px 0;
+@import url("styles/header.css");
+:root {
+    --cor-de-fundo: #EBECEE;
+    --branco: #FFFFFF;
 }
-.cabecalho {
-background-color:#04146c;
- color: white;
- display:flex;
- justify-content: space-around;
- padding: 24px 0;
- font-size: 24px;
+body {
+    background-color: var(--cor-de-fundo);
 }
-
-.cabecalho-imagem {
-    width: 20%;}
-
-    .cabecalho-lista-item{
-        display: inline-block;
-        margin: 0 16px;
-    }
-    .escola-imagem {
-        width:25%;
-    }
-
-    .escola-titulo{
-        padding: 24px 0;text-align: center;padding: 50px 0;
-    }
-.escola {
-    background-image: linear-gradient(#04146C,#4EBFE9);
-    color:white;
-    display:flex;
-    justify-content: center; 
-    align-items:center;
-}
-   .escola-conteudo{
-    width:35%;
-   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
