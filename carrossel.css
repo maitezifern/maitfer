@@ -19,8 +19,8 @@
     margin: 0.5em 0;
 }
 .card-descriçao {
-    display:flex
-    justify-content:space-between
+    display:flex;
+    justify-content:space-between;
     margin-bottom: 0.5em;
 }
 .card-botoes {
