@@ -1,136 +1,116 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>AluraBooks</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="reset.css>">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-    </head>
-    <body>
-        <header class="cabeçalho">
-            <div class="container">
-                <input type="checkbox" id="menu" class="container__botao">
-                <label for="menu">
-                    <span class="cabeçalho__menu-hamburguer container__imagem"></span>
-                </label>
-                <ul class="lista-menu">
-                    <li class="lista-menu__titulo">Categorias</li>
-                    <li class="lista-menu__item">
-                        <a href="#" class="lista-menu__link">Programação</a>
-                    </li>
-                    <li class="lista-menu__item">
-                        <a href="#" class="lista-menu__link">Front-end</a>
-                    </li>
-                    <li class="lista-menu__item">
-                        <a href="#" class="lista-menu__link">Infraestrutura</a>
-                    </li>
-                    <li class="lista-menu__item">
-                        <a href="#" class="lista-menu__link">Business</a>
-                    </li>
-                    <li class="lista-menu__item">
-                        <a href="#" class="lista-menu__link">Design & UX</a>
-                    </li>
-                </ul>
-            <img src="img/Logo.svg" alt="logo da Alurabooks" class="container__imagem">
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus objetivos do ano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="conteudo-principal">
+        <h2 class="titulo-principal">Meus objetivos do ano<span>_</span></h2>
+        <div class="conteudo">
+            <div class="botoes">
+                <button class="botao ativo">Cursos na Alura</button>
+                <button class="botao">Criar projetos em Javascript</button>
+                <button class="botao">Criar um portfolio</button>
+                <button class="botao">Atualizar meu currículo</button>
             </div>
-            <div class="container">
-            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
-            <a href="#"><img src="img/Sacola.png" alt="Carrinho de compras" class="container__imagem"></a>
-            <a href="#"><img src="img/Usuario.png" alt="Meu perfil" class="container__imagem"></a>
-        </div>
-        </header>
-        <section class="banner">
-            <h2 class="banner__titulo">Já sabe por onde começar?</h2>
-            <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
-            <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
-        </section>
-            <section class="carrossel">
-                <h2 class="carrossel__titulo">Novos Lançamentos</h2>
-<div class="swiper">
-    <div class="swiper-pagination"></div>
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="img/ApacheKafka.png" alt="Livro sobre apache Kafka e spring boot da AluraBooks"></div>
-      <div class="swiper-slide"><img src="img/Javascript.png" alt="Livro sobre JavaScript da AluraBooks"></div>
-      <div class="swiper-slide"><img src="img/Portugol.png" alt="Livro sobre Portugol da AluraBooks"></div>
-      <div class="swiper-slide"><img src="img/Arquitetura.png" alt="Livro sobre arquitetura da AluraBooks"></div>
-      <div class="swiper-slide"><img src="img/Construct2.png" alt="Livro sobre construcao da AluraBooks"></div>
-      <div class="swiper-slide"><img src="img/Gestão.png" alt="Livro sobre gestao da AluraBooks"></div>
-      <div class="swiper-slide"><img src="img/Liderança.png" alt="Livro sobre Liderança da AluraBooks"></div>
-      <div class="swiper-slide"><img src="img/MetricasAgeis.png" alt="Livro sobre Metricas da AluraBooks"></div>
-      <div class="swiper-slide"><img src="img/Nodejs.png" alt="Livro sobre note da AluraBooks"></div>
-      <div class="swiper-slide"><img src="img/ReactNative.png" alt="Livro sobre react da AluraBooks"></div>
-      <div class="swiper-slide"><img src="img/Sacola.png" alt="Livro sobre Sacola da AluraBooks"></div>
-      <div class="swiper-slide"><img src="img/Tuning.png" alt="Livro sobre tuning da AluraBooks"></div>
-      <div class="swiper-slide"><img src="img/Usuario.png" alt="Livro sobre usuario da AluraBooks"></div>
-      <div class="swiper-slide"><img src="img/UX.png" alt="Livro sobre UX da AluraBooks"></div>
-      </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div>
-            <div class="card">
-                <div class="card__descriçao">
-                    <div class="descriçao">
-                        <div class="descricao">
-                            <h3 class="descricao__titulo">Talvez voce tambem se interesse por...</h3>
-                            <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
-                            <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+            <div class="abas-textos">
+                <div class="aba-conteudo ativo">
+                    <h3 class="aba-conteudo-titulo-principal">Estudar 4 cursos na Alura</h3>
+                    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                    <div class="contador">
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="dias0"></p>
+                            <p class="contador-digito-texto">dias</p>
                         </div>
-                        <img src="img/Angular.svg" class="descricao__imagem">
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="horas0"></p>
+                            <p class="contador-digito-texto">horas</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="min0"></p>
+                            <p class="contador-digito-texto">min</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="seg0"></p>
+                            <p class="contador-digito-texto">seg</p>
+                        </div>
                     </div>
-                    <div class="card__botoes">
-                        <u1 class="botoes">
-                            <li class="botoes__item"><img src="img/Favoritos.svg" alt="favoritar livro"></li>
-                            <li class="botoes__item"><img src="img/Sacola.png" alt="adicionar no carrinho de compras"></li>
-                        </u1>
-                        <a href="#" class="botoes__ancora">Saiba mais</a>
+                </div>
+                <div class="aba-conteudo">
+                    <h3 class="aba-conteudo-titulo-principal">Criar 5 projetos em Javascript</h3>
+                    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                    <div class="contador">
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="dias1"></p>
+                            <p class="contador-digito-texto">dias</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="horas1"></p>
+                            <p class="contador-digito-texto">horas</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="min1"></p>
+                            <p class="contador-digito-texto">min</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="seg1"></p>
+                            <p class="contador-digito-texto">seg</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aba-conteudo">
+                    <h3 class="aba-conteudo-titulo-principal">Criar um portfolio com os meus 3 melhores projetos</h3>
+                    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                    <div class="contador">
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="dias2"></p>
+                            <p class="contador-digito-texto">dias</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="horas2"></p>
+                            <p class="contador-digito-texto">horas</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="min2"></p>
+                            <p class="contador-digito-texto">min</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="seg2"></p>
+                            <p class="contador-digito-texto">seg</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aba-conteudo">
+                    <h3 class="aba-conteudo-titulo-principal">Atualizar meu curriculo com os certificados da Alura</h3>
+                    <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                    <div class="contador">
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="dias3"></p>
+                            <p class="contador-digito-texto">dias</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="horas3"></p>
+                            <p class="contador-digito-texto">horas</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="min3"></p>
+                            <p class="contador-digito-texto">min</p>
+                        </div>
+                        <div class="contador-digito">
+                            <p class="contador-digito-numero" id="seg3"></p>
+                            <p class="contador-digito-texto">seg</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="topicos">
-            <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
-            <u1 class="topicos__lista">
-                <li class="topicos__item">
-                    <a href="#" class="topicos__link">Android</a>
-                </li>
-                <li class="topicos__item">
-                    <a href="#" class="topicos__link">Marketing digital</a>
-                </li>
-                <li class="topicos__item">
-                    <a href="#" class="topicos__link">Agile</a>
-                </li>
-                <li class="topicos__item">
-                    <a href="#" class="topicos__link">Startups</a>
-                </li>
-                <li class="topicos__item">
-                    <a href="#" class="topicos__link">HTML e CSS</a>
-                </li>
-                <li class="topicos__item">
-                    <a href="#" class="topicos__link">Python</a>
-                </li>
-                <li class="topicos__item">
-                    <a href="#" class="topicos__link">OO</a>
-                </li>
-                <li class="topicos__item">
-                    <a href="#" class="topicos__link">Java</a>
-                </li>
-            </u1>
-        </section>
-        <section class="contato">
-            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-            <p class="contato__texto">Atualizações de e-books,novos livros,promoções e outros.</p>
-            <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
-        </section>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-        <script>const swiper = new Swiper('.swiper', {spaceBetween: 10, slidesPerView: 3, pagination: {el: '.swiper-pagination',type: 'bullets', }})</script>
-        <hr/>
-        <footer class="rodape">
-            <h2 class="rodape__titulo">Grupo Alura</h2>
-        </footer>
-    </body>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
 </html>
